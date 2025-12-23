@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lagos Prime Properties | Trusted Real Estate in Lagos</title>
+  <meta name="description" content="Find verified homes, apartments & commercial spaces for rent or sale in Lekki, VI, Ikeja & more. No fake agents.">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Desktop Header (visible on md+) -->
+<header class="desktop-header">
+  <div class="container">
+    <div class="header-content">
+      <a href="#hero" class="logo">Lagos Prime Properties</a>
+      <nav class="desktop-nav">
+        <a href="#trust">Why Us</a>
+        <a href="#listings">Properties</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#agent">Agent</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://wa.me/2348012345678" class="whatsapp-desktop" target="_blank">📱 WhatsApp</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation (off-canvas) -->
+<nav class="mobile-nav" id="mobileNav">
+  <div class="nav-header">
+    <span class="logo">Lagos Prime</span>
+    <button class="close-btn" id="closeNav">&times;</button>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#trust">Why Us</a></li>
+    <li><a href="#listings">Properties</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#agent">Agent</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="https://wa.me/2348012345678" target="_blank">WhatsApp Us</a></li>
+  </ul>
+</nav>
+
+<!-- Hamburger Button -->
+<button class="hamburger" id="hamburger">&#9776;</button>
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section with Video Background -->
+<section class="hero" id="hero">
+  <!-- Video Background (desktop/tablet only) -->
+  <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
+    <source src="video/video-1.mp4" type="video/mp4">
+    <!-- Fallback image if video fails -->
+    <img src="images/zenith-wogwugwu.jpg" alt="Lagos Prime Properties - Luxury Homes in Lagos">
+  </video>
+
+  <!-- Overlay for readability -->
+  <div class="hero-overlay">
+    <div class="container">
+      <h1>Find Your Dream Property in Lagos</h1>
+      <p class="hero-subtitle">Verified listings in Lekki, Victoria Island, Ikeja, Surulere & Ajah. No fake agents. No stress.</p>
+      <a href="https://wa.me/2348012345678?text=Hi! I need help finding a property in Lagos." 
+         target="_blank" 
+         class="btn hero-btn">
+        📞 WhatsApp Us Now — Fast Response!
+      </a>
+    </div>
+  </div>
+</section>
+
+    <!-- Trust Section -->
+    <section class="trust animate-on-scroll" id="trust">
+      <div class="container">
+        <h2>Why Lagosians Trust Us</h2>
+        <p class="section-subtitle">We’re not just another agent. We’re your Lagos property partner.</p>
+        <div class="trust-grid">
+          <div class="trust-item">
+            <div class="trust-icon">✓</div>
+            <h3>100% Verified Listings</h3>
+            <p>We visit every property. No fake photos or “ghost houses”.</p>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">⏱️</div>
+            <h3>Same-Day Viewings</h3>
+            <p>Available evenings & weekends — even during traffic!</p>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">📍</div>
+            <h3>Lagos-Based Experts</h3>
+            <p>Our team lives in Lekki, VI & Ikeja. We know every street.</p>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">₦</div>
+            <h3>No Hidden Fees</h3>
+            <p>Zero commission for tenants. You pay only rent + agreed charges.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Listings -->
+    <section class="listings animate-on-scroll" id="listings">
+      <div class="container">
+        <h2>Available Properties in Lagos</h2>
+        <p class="section-subtitle">All listings verified. Updated daily.</p>
+
+        <div class="filters">
+          <div class="filter-group">
+            <label for="locationFilter">Location</label>
+            <select id="locationFilter">
+              <option value="">All Areas</option>
+              <option value="Lekki">Lekki</option>
+              <option value="Victoria Island">Victoria Island</option>
+              <option value="Ikeja">Ikeja</option>
+              <option value="Surulere">Surulere</option>
+              <option value="Ajah">Ajah</option>
+              <option value="Yaba">Yaba</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="typeFilter">Property Type</label>
+            <select id="typeFilter">
+              <option value="">All Types</option>
+              <option value="Apartment">Apartment/Flat</option>
+              <option value="House">House</option>
+              <option value="Commercial">Commercial Space</option>
+              <option value="Land">Land</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="categoryFilter">Category</label>
+            <select id="categoryFilter">
+              <option value="">Rent & Sale</option>
+              <option value="rent">For Rent</option>
+              <option value="sale">For Sale</option>
+            </select>
+          </div>
+
+          <button id="resetFilters" class="reset-btn">Reset</button>
+        </div>
+
+        <div id="propertyGrid" class="property-grid"></div>
+        <p id="noResults" class="no-results">No properties match your filters.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials animate-on-scroll" id="testimonials">
+      <div class="container">
+        <h2>What Our Clients Say</h2>
+        <p class="section-subtitle">Real stories from Lagos property seekers like you</p>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              “I was tired of agents showing me places that don’t exist online. Lagos Prime actually took me to see a real flat in Lekki within 24 hours! Even helped me check the NEPA bill history.”
+            </div>
+            <div class="testimonial-author">
+              <strong>Amina O.</strong><br>
+              <span>Found a 3-bedroom in Lekki — June 2025</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              “As a business owner in Yaba, I needed shop space fast. They showed me 4 options the same day and handled all paperwork. No stress, no extra fees.”
+            </div>
+            <div class="testimonial-author">
+              <strong>Emeka C.</strong><br>
+              <span>Leased commercial space in Yaba — April 2025</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              “We bought land in Ajah last year. Tunde from Lagos Prime walked the plot with us at 7 AM to avoid the sun! He even introduced us to a surveyor we can trust.”
+            </div>
+            <div class="testimonial-author">
+              <strong>Funke & David A.</strong><br>
+              <span>Purchased land in Ajah — November 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agent -->
+    <section class="agent-section animate-on-scroll" id="agent">
+      <div class="container">
+        <h2>Your Lagos Property Partner</h2>
+        <p class="section-subtitle">Meet the expert who’ll help you find your perfect space</p>
+        <div class="agent-card">
+          <div class="agent-image">
+            <img src="images/agent-placeholder.jpg" alt="Tunde Adebayo - Lagos Property Agent">
+          </div>
+          <div class="agent-bio">
+            <h3>Tunde Adebayo</h3>
+            <p class="agent-title">Lead Property Consultant | 7+ Years in Lagos Real Estate</p>
+            <p>Tunde has helped over <strong>250+ clients</strong> find homes and commercial spaces across Lagos — from Surulere studios to Lekki waterfront estates.</p>
+            <p>A native of Ikeja, he knows every street, landlord, and hidden gem in the city. Fluent in English, Yoruba, and Nigerian Pidgin — so you’ll always understand what’s going on.</p>
+            <p>⚡ <em>“My promise: I won’t show you anything I haven’t seen myself.”</em></p>
+            <a href="https://wa.me/2348012345678?text=Hi Tunde! I saw your profile on Lagos Prime Properties." 
+               target="_blank" 
+               class="btn agent-btn">
+              📩 Message Tunde Directly on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section animate-on-scroll" id="faq">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <p class="section-subtitle">Quick answers to help you move forward</p>
+        <div class="faq-container">
+          <div class="faq-item">
+            <h3 class="faq-question">Do you charge tenants a commission or viewing fee?</h3>
+            <div class="faq-answer">
+              <p>No. We are paid by property owners and landlords. You only pay your rent and any agreed utility deposits (like for generator fuel or water).</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">How soon can I view a property?</h3>
+            <div class="faq-answer">
+              <p>Most listings can be viewed the same day — even on weekends! Just WhatsApp us between 8 AM and 8 PM, and we’ll arrange it around Lagos traffic.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">Are generator and NEPA bill included in rent?</h3>
+            <div class="faq-answer">
+              <p>It depends on the property. In most Lagos rentals, the generator is provided, but tenants share fuel costs. We’ll clarify this for every listing before you visit.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">Can you help with property documentation or sale paperwork?</h3>
+            <div class="faq-answer">
+              <p>Yes! For sales, we work with trusted lawyers and surveyors in Lagos to handle deeds, survey plans, and Governor’s Consent. We guide you through every step.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Lagos Prime Properties</h4>
+          <p>Helping Lagosians find trusted homes since 2010.</p>
+          <p><strong>CAC Reg:</strong> RC-123456</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#listings">Properties</a></li>
+            <li><a href="#agent">Our Agent</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>📍 24 Admiralty Way, Lekki Phase 1</p>
+          <p>📞 <a href="tel:+2348012345678">+234 801 234 5678</a></p>
+          <p>✉️ info@lagosprime.ng</p>
+          <p>💬 <a href="https://wa.me/2348012345678" target="_blank">WhatsApp Us</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Lagos Prime Properties. Serving all of Lagos.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
