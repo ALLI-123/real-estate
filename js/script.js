@@ -1,13 +1,13 @@
 // === PROPERTY DATA ===
 const properties = [
-  { id:1, title:"Modern 3-Bedroom Flat", location:"Lekki", type:"Apartment", category:"rent", price:1200000, area:"120 sqm", image:"https://picsum.photos/300/200?random=1" },
-  { id:2, title:"Spacious 4-Bedroom Duplex", location:"Ikeja", type:"House", category:"rent", price:2500000, area:"250 sqm", image:"https://picsum.photos/300/200?random=2" },
-  { id:3, title:"Prime Office Space – VI", location:"Victoria Island", type:"Commercial", category:"rent", price:3500000, area:"180 sqm", image:"https://picsum.photos/300/200?random=3" },
-  { id:4, title:"Cozy 1-Bedroom Apartment", location:"Surulere", type:"Apartment", category:"rent", price:450000, area:"60 sqm", image:"https://picsum.photos/300/200?random=4" },
-  { id:5, title:"600sqm Residential Plot", location:"Ajah", type:"Land", category:"sale", price:85000000, area:"600 sqm", image:"https://picsum.photos/300/200?random=5" },
-  { id:6, title:"Luxury 5-Bedroom Penthouse", location:"Lekki", type:"Apartment", category:"sale", price:180000000, area:"320 sqm", image:"https://picsum.photos/300/200?random=6" },
-  { id:7, title:"Shop Space – Allen Avenue", location:"Ikeja", type:"Commercial", category:"sale", price:45000000, area:"100 sqm", image:"https://picsum.photos/300/200?random=7" },
-  { id:8, title:"Family House with BQ", location:"Yaba", type:"House", category:"rent", price:950000, area:"200 sqm", image:"https://picsum.photos/300/200?random=8" }
+  { id:1, title:"Modern 3-Bedroom Flat", location:"Lekki", type:"Apartment", category:"rent", price:1200000, area:"120 sqm", image:"images/Modern-3-Bedroom-Flat.jfif" },
+  { id:2, title:"Spacious 4-Bedroom Duplex", location:"Ikeja", type:"House", category:"rent", price:2500000, area:"250 sqm", image:"images/Spacious-4-Bedroom-Duplex.jfif" },
+  { id:3, title:"Prime Office Space – VI", location:"Victoria Island", type:"Commercial", category:"rent", price:3500000, area:"180 sqm", image:"images/Prime-Office Space-VI.jfif" },
+  { id:4, title:"Cozy 1-Bedroom Apartment", location:"Surulere", type:"Apartment", category:"rent", price:450000, area:"60 sqm", image:"images/cozy-1bedroom-apartment.jfif" },
+  { id:5, title:"600sqm Residential Plot", location:"Ajah", type:"Land", category:"sale", price:85000000, area:"600 sqm", image:"images/600sqm-Residential-Plot.jfif" },
+  { id:6, title:"Luxury 5-Bedroom Penthouse", location:"Lekki", type:"Apartment", category:"sale", price:180000000, area:"320 sqm", image:"images/Luxury-5-Bedroom-Penthouse.jfif" },
+  { id:7, title:"Shop Space – Allen Avenue", location:"Ikeja", type:"Commercial", category:"sale", price:45000000, area:"100 sqm", image:"images/Shop-Space–Allen-Avenue.jfif" },
+  { id:8, title:"Family House with BQ", location:"Yaba", type:"House", category:"rent", price:950000, area:"200 sqm", image:"images/Family-House-with-BQ.jfif" }
 ];
 
 // === DOM ELEMENTS ===
